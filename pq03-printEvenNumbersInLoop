@@ -1,0 +1,27 @@
+/*
+  Practice Question 03
+  Problem Statement: Create a program that only print even values between 0 and 20
+  Aim: Test understanding of using loop statements in C
+*/
+
+#include <stdio.h>
+
+int main()
+{
+
+    int i=0;
+    
+    //Method 1
+    for(i=0;i<20;i++){
+        if(i%2==0){
+            printf("%d\t", i);
+        }
+    }
+    
+    //Method 2
+    for(i=0;i<20;i+=2){
+        printf("%d\t", i);
+    }
+    
+    return 0;
+}
